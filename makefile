@@ -1,2 +1,2 @@
-main: linked-list.c
-	gcc linked-list.c -Wall -o run
+main: main.c
+	gcc main.c headers/list.c headers/impl.c -Wall -o run

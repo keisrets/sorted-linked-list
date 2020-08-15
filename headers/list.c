@@ -1,12 +1,4 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include "headers/struct.h"
-
-Node * init_list(Node **head) {
-    *head = NULL;
-    return *head;
-}
+#include "list.h"
 
 Node * add_node(Node **head, int data) {
     // create new node
@@ -79,21 +71,4 @@ void destroy_list(Node **head) {
     }
 
     *head = NULL;
-}
-
-int main(int argc, char **argv) {
-    Node *head;
-    init_list(&head);
-
-    int n = 0;
-    scanf("%d", &n);
-    while(n > 0) {
-        add_node(&head, n);
-        scanf("%d", &n);
-    }
-    
-    print_list(&head);
-    destroy_list(&head);
-    
-    return EXIT_SUCCESS;
 }
