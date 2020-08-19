@@ -1,7 +1,7 @@
 # Sorted linked list
 
 ## Description
-Sandbox program which automatically sorts the linked list. When a new node is created ascending order by node integer value is obtained. 
+Sandbox program which automatically sorts the linked list. When a new node is created and added to the list, ascending order by node integer value is obtained. 
 Written in C.
 
 ## Installation
